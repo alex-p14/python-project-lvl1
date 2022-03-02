@@ -3,6 +3,9 @@ name = "hexlet-code"
 version = "0.1.0"
 description = ""
 authors = ["alex-p14 <alex-p14@bk.ru>"]
+packages = [
+    { include = "brain_games" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"
