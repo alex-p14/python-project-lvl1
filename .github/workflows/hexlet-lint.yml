@@ -1,4 +1,4 @@
-name: hexlet-lint.yml
+name: hexlet-lint
 on: push
 jobs:
   build:
