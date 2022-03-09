@@ -1,0 +1,15 @@
+name: hexlet-lint.yml
+on: push
+jobs:
+  build:
+    runs-on: ubunty-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: setup-python
+        uses: actions/setup-python@v2
+      - name: install_1
+        run: pip install poetry
+      - name: install_2
+        run: make install
+      - name: run-linter
+        run: make lint
