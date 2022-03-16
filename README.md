@@ -6,3 +6,6 @@
 
 ### Workflow status:
 ![example workflow](https://github.com/alex-p14/python-project-lvl1/actions/workflows/hexlet-linter.yml/badge.svg)
+
+### Asciinema:
+https://asciinema.org/a/jJvZ8uBuZvOyTiPbwva3XxEZ5
