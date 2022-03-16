@@ -3,7 +3,7 @@ name: hexlet-linter
 on:
   push:
     branches:
-      - '*'
+      - master
 
 jobs:
   build:
