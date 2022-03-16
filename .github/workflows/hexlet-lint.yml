@@ -1,16 +1,14 @@
-name: 'hexlet-lint'
+name: hexlet-lint
 
-on: 
-  push:
-    branches: [ master ]
+on: push
 
 jobs:
   build:
     runs-on: ubunty-latest
     steps:
-      - name: 'Install_dependencies'
+      - name: Install_dependencies
         run: |
           pip install poetry
           make install
-      - name: 'Run-linter'
+      - name: Run-linter
         run: make lint
