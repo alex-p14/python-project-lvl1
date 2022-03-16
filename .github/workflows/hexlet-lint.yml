@@ -1,8 +1,7 @@
 name: 'hexlet-lint'
 
 on: 
-  push:
-    branches: [ master ]
+  - push
 
 jobs:
   build:
