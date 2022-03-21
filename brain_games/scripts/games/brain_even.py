@@ -19,8 +19,8 @@ def brain_even(user_name, num_of_repeat=1):
         the_end(user_name)
     else:
         random_num = randint(1, 100)
-        right_answer = is_even_num(random_num)
         user_answer = ask_question(random_num)
+        right_answer = is_even_num(random_num)
         if check_user_answer(user_answer, right_answer, user_name):
             num_of_repeat += 1
             return brain_even(user_name, num_of_repeat)
