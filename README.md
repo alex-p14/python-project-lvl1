@@ -13,3 +13,6 @@
 
    ### brain-calc:
    https://asciinema.org/a/jddXTZxqgMW0YOP79eJlF4dJC
+
+   ### brain-gcd:
+   https://asciinema.org/a/Kx2IFm95xXoNtg1cEWzIO5NVv
