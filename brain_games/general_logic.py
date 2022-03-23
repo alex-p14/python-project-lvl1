@@ -25,5 +25,5 @@ def check_user_answer(user_answer, right_answer, user_name):
         return False
 
 
-def the_end(user_name):
+def finish_the_game(user_name):
     print(f"Congratulations, {user_name}!")

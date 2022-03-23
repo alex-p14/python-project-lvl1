@@ -3,7 +3,7 @@ from random import randint
 from brain_games.general_logic import check_user_answer
 from brain_games.general_logic import ask_question
 from brain_games.general_logic import welcome_user
-from brain_games.general_logic import the_end
+from brain_games.general_logic import finish_the_game
 
 
 def get_next_num(amount_nums, next_num, step, hid_num, counter=1, squence=''):
@@ -32,21 +32,21 @@ def get_number_squence():
     return (num_squence, hidden_number)
 
 
-def brain_progression(user_name, num_of_repeat=1):
+def begin_brain_progression(user_name, num_of_repeat=1):
     if num_of_repeat > 3:
-        the_end(user_name)
+        finish_the_game(user_name)
     else:
         (question, right_answer) = get_number_squence()
         user_answer = ask_question(question)
         if check_user_answer(user_answer, right_answer, user_name):
             num_of_repeat += 1
-            return brain_progression(user_name, num_of_repeat)
+            return begin_brain_progression(user_name, num_of_repeat)
 
 
 def main():
     user_name = welcome_user()
     print("What number is missing in the progression?")
-    brain_progression(user_name)
+    begin_brain_progression(user_name)
 
 
 if __name__ == 'main':

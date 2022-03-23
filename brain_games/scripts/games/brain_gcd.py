@@ -3,7 +3,7 @@ from random import randint
 from brain_games.general_logic import check_user_answer
 from brain_games.general_logic import ask_question
 from brain_games.general_logic import welcome_user
-from brain_games.general_logic import the_end
+from brain_games.general_logic import finish_the_game
 
 
 def get_remainder(num_1, num_2):
@@ -30,9 +30,9 @@ def get_gcd(num_1, num_2):
     return str(result)
 
 
-def brain_gcd(user_name, num_of_repeat=1):
+def begin_brain_gcd(user_name, num_of_repeat=1):
     if num_of_repeat > 3:
-        the_end(user_name)
+        finish_the_game(user_name)
     else:
         num_1 = randint(1, 100)
         num_2 = randint(1, 100)
@@ -41,13 +41,13 @@ def brain_gcd(user_name, num_of_repeat=1):
         right_answer = get_gcd(num_1, num_2)
         if check_user_answer(user_answer, right_answer, user_name):
             num_of_repeat += 1
-            return brain_gcd(user_name, num_of_repeat)
+            return begin_brain_gcd(user_name, num_of_repeat)
 
 
 def main():
     user_name = welcome_user()
     print("Find the greatest common divisor of given numbers.")
-    brain_gcd(user_name)
+    begin_brain_gcd(user_name)
 
 
 if __name__ == 'main':
