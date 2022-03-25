@@ -1,9 +1,11 @@
 #!usr/bin/env python3
 from random import randint, choice
-from brain_games.general_logic import check_user_answer
-from brain_games.general_logic import ask_question
-from brain_games.general_logic import welcome_user
-from brain_games.general_logic import finish_the_game
+from brain_games.general_logic import (
+    check_user_answer,
+    ask_question,
+    welcome_user,
+    finish_the_game
+)
 
 
 def find_expression_result(num_1, num_2, operator):
