@@ -33,7 +33,7 @@ It is a small project of five console games. Implemented in python 3.8
    https://asciinema.org/a/Kx2IFm95xXoNtg1cEWzIO5NVv
 
    ### brain-progression:
-   https://asciinema.org/a/kwLmhLnxFTDqPHtI8yiWvBDrj
+   https://asciinema.org/a/Qz6nPcDK7ym9qO4MgPolPoxrh
 
    ### brain-prime:
    https://asciinema.org/a/frNIt44Kb2eqRXcuTKIrcmVYH
