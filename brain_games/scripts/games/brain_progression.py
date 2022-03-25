@@ -14,7 +14,9 @@ def get_next_num(amount_nums, next_num, step, hid_num, counter=1, squence=''):
     elif hid_num == counter:
         squence += " .."
     else:
-        squence += f" {next_num}"
+        if counter > 1:
+            squence += " "
+        squence += f"{next_num}"
     counter += 1
     next_num += step
     return get_next_num(amount_nums, next_num, step, hid_num, counter, squence)
