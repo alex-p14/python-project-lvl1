@@ -6,6 +6,11 @@ authors = ["alex-p14 <alex-p14@bk.ru>"]
 packages = [
     { include = "brain_games" },
 ]
+classifiers = [
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+repository = 'https://github.com/alex-p14/python-project-lvl1'
 
 [tool.poetry.dependencies]
 python = "^3.8"
