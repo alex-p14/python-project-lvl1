@@ -1,11 +1,8 @@
-### *Hexlet tests and linter status:*
+# *brain-games project*
+
 [![Actions Status](https://github.com/alex-p14/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/alex-p14/python-project-lvl1/actions)
-
-### *Maintainability Badge:*
+[![example workflow](https://github.com/alex-p14/python-project-lvl1/actions/workflows/hexlet-linter.yml/badge.svg)](https://github.com/alex-p14/python-project-lvl1/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/alex-p14/python-project-lvl1)
-
-### *Workflow status:*
-![example workflow](https://github.com/alex-p14/python-project-lvl1/actions/workflows/hexlet-linter.yml/badge.svg)
 
 ### *About this project:*
 *It is a small project of five console games. Implemented in **python 3.8***
