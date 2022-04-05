@@ -1,4 +1,4 @@
-from random import randint
+import random
 
 
 def get_description():
@@ -17,6 +17,6 @@ def get_right_answer(question):
 
 
 def get_question_and_answer():
-    question = randint(1, 100)
+    question = random.randint(1, 100)
     answer = get_right_answer(question)
     return question, answer
