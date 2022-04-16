@@ -28,12 +28,17 @@ make package-install
 brain-even
 ```
 ### *Asciinema:*
-* [___brain-even___](https://asciinema.org/a/jJvZ8uBuZvOyTiPbwva3XxEZ5)
+* _brain-even_ :
+  [![asciicast](https://asciinema.org/a/jJvZ8uBuZvOyTiPbwva3XxEZ5.svg)](https://asciinema.org/a/jJvZ8uBuZvOyTiPbwva3XxEZ5)
 
-* [___brain-calc___](https://asciinema.org/a/jddXTZxqgMW0YOP79eJlF4dJC)
+* _brain-calc_ :
+  [![asciicast](https://asciinema.org/a/jddXTZxqgMW0YOP79eJlF4dJC.svg)](https://asciinema.org/a/jddXTZxqgMW0YOP79eJlF4dJC)
 
-* [___brain-gcd___](https://asciinema.org/a/Kx2IFm95xXoNtg1cEWzIO5NVv)
+* _brain-gcd_ :
+  [![asciicast](https://asciinema.org/a/Kx2IFm95xXoNtg1cEWzIO5NVv.svg)](https://asciinema.org/a/Kx2IFm95xXoNtg1cEWzIO5NVv)
 
-* [___brain-progression___](https://asciinema.org/a/Qz6nPcDK7ym9qO4MgPolPoxrh)
+* _brain-progression_ :
+  [![asciicast](https://asciinema.org/a/Qz6nPcDK7ym9qO4MgPolPoxrh.svg)](https://asciinema.org/a/Qz6nPcDK7ym9qO4MgPolPoxrh)
 
-* [___brain-prime___](https://asciinema.org/a/frNIt44Kb2eqRXcuTKIrcmVYH)
+* _brain-prime_ :
+  [![asciicast](https://asciinema.org/a/frNIt44Kb2eqRXcuTKIrcmVYH.svg)](https://asciinema.org/a/frNIt44Kb2eqRXcuTKIrcmVYH)
