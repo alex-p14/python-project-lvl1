@@ -5,34 +5,12 @@ def get_description():
     return 'What number is missing in the progression?.'
 
 
-def get_next_num(amount_nums, next_num, step, hid_num, counter=1, squence=''):
-    if amount_nums < counter:
-        return squence
-    elif hid_num == counter:
-        squence += " .."
-    else:
-        if counter > 1:
-            squence += " "
-        squence += f"{next_num}"
-    counter += 1
-    next_num += step
-    return get_next_num(amount_nums, next_num, step, hid_num, counter, squence)
-
-
-def find_hidden_num(first_num, step_size, hidden_element):
-    return str(first_num + step_size * (hidden_element - 1))
-
-
-def get_number_squence():
+def get_question_and_answer():
     amount_nums = random.randint(6, 10)
     first_num = random.randint(1, 100)
     step = random.randint(2, 9)
-    hidden_element = random.randint(2, amount_nums)
-    num_squence = get_next_num(amount_nums, first_num, step, hidden_element)
-    hidden_number = find_hidden_num(first_num, step, hidden_element)
-    return num_squence, hidden_number
-
-
-def get_question_and_answer():
-    question, answer = get_number_squence()
+    hidden_element = random.randint(0, amount_nums - 1)
+    progression = list(range(first_num, (first_num + step * amount_nums), step))
+    answer, progression[hidden_element] = str(progression[hidden_element]), '..'
+    question = ' '.join(map(str, progression))
     return question, answer
