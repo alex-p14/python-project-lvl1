@@ -5,15 +5,8 @@ def get_description():
     return 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def is_even_number(num):
-    return num % 2 == 0
-
-
 def get_right_answer(question):
-    if is_even_number(question):
-        return "yes"
-    else:
-        return "no"
+    return "no" if question % 2 else "yes"
 
 
 def get_question_and_answer():
