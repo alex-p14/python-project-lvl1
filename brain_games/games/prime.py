@@ -5,26 +5,17 @@ def get_description():
     return 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def get_square_number(num):
-    return num * num
-
-
-def is_divided_number(num_1, num_2):
-    result = num_1 % num_2
-    return result == 0
-
-
 def find_smallest_divisor(num, divisor=2):
-    if get_square_number(divisor) > num:
+    if divisor ** 2 > num:
         return num
-    elif is_divided_number(num, divisor):
+    elif num % divisor == 0:
         return divisor
-    else:
-        divisor += 1
-        return find_smallest_divisor(num, divisor)
+    return find_smallest_divisor(num, divisor + 1)
 
 
 def is_prime_number(num):
+    if num == 1:
+        return False
     return find_smallest_divisor(num) == num
 
 
