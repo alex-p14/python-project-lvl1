@@ -14,12 +14,12 @@ def run_game(get_description, get_question_answer):
         print(f"Question: {question}")
         user_answer = prompt.string("Your answer: ")
 
-        if user_answer == right_answer:
-            print("Correct!")
-        else:
+        if user_answer != right_answer:
             print(f"'{user_answer}' is wrong answer ;(. "
                   f"Correct answer was '{right_answer}'\n"
                   f"Let's try again, {user_name}!")
             return
+
+        print('Correct!')
 
     print(f"Congratulations, {user_name}!")
